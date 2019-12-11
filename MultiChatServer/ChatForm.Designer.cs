@@ -72,7 +72,7 @@
             this.txtTTS.Margin = new System.Windows.Forms.Padding(4, 2, 3, 3);
             this.txtTTS.MaxLength = 260;
             this.txtTTS.Name = "txtTTS";
-            this.txtTTS.Size = new System.Drawing.Size(361, 27);
+            this.txtTTS.Size = new System.Drawing.Size(361, 37);
             this.txtTTS.TabIndex = 7;
             // 
             // lblTTS
@@ -107,7 +107,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 2, 3, 3);
             this.txtAddress.MaxLength = 260;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(161, 27);
+            this.txtAddress.Size = new System.Drawing.Size(161, 37);
             this.txtAddress.TabIndex = 1;
             // 
             // btnStart
@@ -167,7 +167,7 @@
             this.txtPort.Margin = new System.Windows.Forms.Padding(4, 2, 3, 3);
             this.txtPort.MaxLength = 5;
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(93, 27);
+            this.txtPort.Size = new System.Drawing.Size(93, 37);
             this.txtPort.TabIndex = 3;
             this.txtPort.Text = "15000";
             // 

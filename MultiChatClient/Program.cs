@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
+
+
 namespace MultiChatClient {
     static class Program {
         /// <summary>
@@ -12,7 +14,13 @@ namespace MultiChatClient {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChatForm());
+
+            // 채팅 폼
+            // Application.Run(new ChatForm());
+            Application.Run(new ChatForm2());
+
+            //로그인 폼
+            //Application.Run(new Login());
         }
     }
 }

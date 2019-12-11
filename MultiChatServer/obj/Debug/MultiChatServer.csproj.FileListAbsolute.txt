@@ -22,3 +22,12 @@ C:\Users\CS3-11\Desktop\MultiChat - ID 추가_Dictionary\MultiChatServer\obj\Deb
 C:\Users\CS3-11\Desktop\MultiChat - ID 추가_Dictionary\MultiChatServer\obj\Debug\MultiChatServer.csproj.CoreCompileInputs.cache
 C:\Users\CS3-11\Desktop\MultiChat - ID 추가_Dictionary\MultiChatServer\obj\Debug\MultiChatServer.exe
 C:\Users\CS3-11\Desktop\MultiChat - ID 추가_Dictionary\MultiChatServer\obj\Debug\MultiChatServer.pdb
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\bin\Debug\MultiChatServer.exe
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\bin\Debug\MultiChatServer.pdb
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.csprojAssemblyReference.cache
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.ChatForm.resources
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.Properties.Resources.resources
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.csproj.GenerateResource.cache
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.csproj.CoreCompileInputs.cache
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.exe
+C:\Users\skan0\Desktop\NW_pro\NW_Project\MultiChatServer\obj\Debug\MultiChatServer.pdb

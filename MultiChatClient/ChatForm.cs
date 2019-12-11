@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
+//using MySql.Data.MySqlClient;
 
 namespace MultiChatClient {
     public partial class ChatForm : Form {
@@ -25,6 +26,7 @@ namespace MultiChatClient {
                 ctrl.Text = source + Environment.NewLine + s;
             }
         }
+
 
         void OnFormLoaded(object sender, EventArgs e) {
 
@@ -164,6 +166,21 @@ namespace MultiChatClient {
                 mainSock.Disconnect(false);
                 mainSock.Close();
             }
+        }
+
+        private void txtAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHistory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tblMainLayout_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

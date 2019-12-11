@@ -123,6 +123,7 @@ namespace MultiChatServer {
             // 텍스트로 변환한다.
             string text = Encoding.UTF8.GetString(obj.Buffer);
             AppendText(txtHistory, text);
+            
 
             // : 기준으로 짜른다.
             // tokens[0] - 보낸 사람 ID
@@ -135,6 +136,7 @@ namespace MultiChatServer {
                 clientNum++;
                 id = tokens[1];
                 AppendText(txtHistory, string.Format("[접속{0}]ID : {1}", clientNum,id));
+                
                 // 연결된 클라이언트 리스트에 추가해준다.
                 connectedClients.Add(id, obj.WorkingSocket);
             }
