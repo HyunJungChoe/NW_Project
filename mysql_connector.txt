@@ -1,1 +1,0 @@
-https://dev.mysql.com/downloads/connector/net/8.0.html

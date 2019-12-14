@@ -130,7 +130,15 @@ namespace MultiChatServer {
             // tokens[1] - 보낸 메세지
             string[] tokens = text.Split(':');
             string id = null;
+            if (tokens[0].Equals("JUM"))
+            {
+                
+                string jum_id = tokens[1];
+                string jum = tokens[2];
+                byte[] bDts = Encoding.UTF8.GetBytes("JUM" + ':' + jum_id + ":" + jum);
+                // 연결된 모든 클라이언트에게 전송한다.
 
+            }
             if (tokens[0].Equals("id"))
             {
                 clientNum++;

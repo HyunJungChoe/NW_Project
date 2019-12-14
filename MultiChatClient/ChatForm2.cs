@@ -23,7 +23,7 @@ namespace MultiChatClient
         IPAddress thisAddress;
         string nameID;
 
-        String[] word = new String[] { "한국성서대", "기말고사", "종강", "엄마", "미안","네트워크 프로그래밍" , "리그오브레전드", "피파온라인", "브롤스타즈"};
+        String[] word = new String[] { "한국성서대", "기말고사", "종강", "엄마", "미안","갓정현" , "리그오브레전드", "피파온라인", "브롤스타즈","끝"};
 
         int i = 1;
         int jum = 0;
@@ -74,11 +74,7 @@ namespace MultiChatClient
             label1.Text = word[0];
             textBox1.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             
-            
-
-
-
-
+    
 
         }
 
@@ -112,8 +108,14 @@ namespace MultiChatClient
 
                 
             }
-            
+            if (tokens[0].Equals("JUM"))
+            {
 
+                string jum_id = tokens[1];
+                string jum = tokens[2];
+                string jum_listview = jum_id + ":" + jum;
+                listView1.Items.Add(jum_listview);
+            }
             else
             {
                 string id = tokens[0];
@@ -298,10 +300,6 @@ namespace MultiChatClient
 
                         label3.Text = Convert.ToString(jum);
 
-                   
-                    
-
-
 
                     }
 
@@ -323,22 +321,32 @@ namespace MultiChatClient
         private void timer1_Tick(object sender, EventArgs e)
         {
             //3초마다 단어 변경하기
+            //3초마다 단어 변경하기
             label1.Text = word[i];
 
             i += 1;
 
-            if (i == 9)
+            if (i == 10)
             {
                 timer1.Stop();
                 MessageBox.Show("게임이 종료되었습니다.");
                 textBox1.ReadOnly = true;
+
+                string a = nameID + ":" + jum + "점";
+                byte[] bDts = Encoding.UTF8.GetBytes("JUM:" + a);
+
+                mainSock.Send(bDts);
+                listView1.Items.Add(a);
+
             }
 
            
             
         }
 
-        
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

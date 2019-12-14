@@ -24,12 +24,12 @@
         /// </summary>
         private void InitializeComponent() {
             this.tblMainLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.txtHistory = new System.Windows.Forms.TextBox();
             this.txtTTS = new System.Windows.Forms.TextBox();
             this.lblTTS = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.txtHistory = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
             this.lblPortNumber = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -66,6 +66,21 @@
             this.tblMainLayout.Size = new System.Drawing.Size(1092, 554);
             this.tblMainLayout.TabIndex = 2;
             this.tblMainLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tblMainLayout_Paint);
+            // 
+            // txtHistory
+            // 
+            this.txtHistory.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtHistory.BackColor = System.Drawing.Color.White;
+            this.tblMainLayout.SetColumnSpan(this.txtHistory, 5);
+            this.txtHistory.Location = new System.Drawing.Point(12, 46);
+            this.txtHistory.Margin = new System.Windows.Forms.Padding(4, 3, 2, 3);
+            this.txtHistory.Multiline = true;
+            this.txtHistory.Name = "txtHistory";
+            this.txtHistory.ReadOnly = true;
+            this.txtHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtHistory.Size = new System.Drawing.Size(1070, 442);
+            this.txtHistory.TabIndex = 5;
+            this.txtHistory.TextChanged += new System.EventHandler(this.txtHistory_TextChanged);
             // 
             // txtTTS
             // 
@@ -125,21 +140,6 @@
             this.btnConnect.Text = "연결";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.OnConnectToServer);
-            // 
-            // txtHistory
-            // 
-            this.txtHistory.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtHistory.BackColor = System.Drawing.Color.White;
-            this.tblMainLayout.SetColumnSpan(this.txtHistory, 5);
-            this.txtHistory.Location = new System.Drawing.Point(12, 46);
-            this.txtHistory.Margin = new System.Windows.Forms.Padding(4, 3, 2, 3);
-            this.txtHistory.Multiline = true;
-            this.txtHistory.Name = "txtHistory";
-            this.txtHistory.ReadOnly = true;
-            this.txtHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtHistory.Size = new System.Drawing.Size(1070, 442);
-            this.txtHistory.TabIndex = 5;
-            this.txtHistory.TextChanged += new System.EventHandler(this.txtHistory_TextChanged);
             // 
             // btnSend
             // 
